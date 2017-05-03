@@ -1,0 +1,204 @@
+/*
+ * Ingresa el CSS del proyecto en este archivo
+ */
+
+* {
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+  text-align: center; 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  /* Establece la fuente de Google aquí */
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.71429;
+  background-color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  color: #373B47;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E95853;
+}
+
+
+.row:before, .row:after { 
+    content:" "; 
+    display: table; 
+}
+
+.row:after {
+    clear:both; 
+}
+
+
+
+#logo {
+    width: 50px; 
+}
+
+nav {
+    position: fixed; 
+    width: 100%; 
+    background-color: white; 
+    top: 0; 
+}
+
+#home {
+  background-image: url(../assets/images/bg-home.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 554px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+
+.text-home{
+  font-size: 53px;
+}
+
+#contenedorHome {
+  color: white;
+  padding: 70px;
+}
+
+#home h1 {
+    padding: 50px; 
+}
+
+.btn-home {
+  background: #2ECC71;
+  color: #fff;
+  padding: 11px 20px;
+  border-radius: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 63px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+
+#services {
+  background-color: #F17C72;
+  text-align: center;
+  color: #fff;
+  padding: 70px 7px;
+}
+
+.box-services{
+  display: inline-block;
+  width: 30%;
+  margin-top: 63px;
+}
+
+
+.text-services {
+  font-size: 35px;
+  letter-spacing: 2px;
+    padding: 20px; 
+}
+
+
+#work {
+  margin: 0 auto;
+  align-items: center;
+}
+
+
+#work .box-work{
+  width: 20%;
+  display: inline-block;
+  margin-left: 115px;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+
+#work .box-work img{
+  width: 100%;
+}
+
+
+footer {
+  font-size: 12px;
+  text-align: center;
+  background-color: #D8D8D8; 
+}
+
+
+
+/* El Modal (fondo) */
+.modal {
+    display: none; /* Escondido por default */
+    position: fixed; /* Se mantiene en su lugar*/
+    z-index: 1; /* Se queda en el top */
+    padding-top: 100px; /* Lugar donde se localiza la caja */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full */
+    height: 100%; /* Full */
+    overflow: auto; /* Scroll habilitado por si se necesita */
+    background-color: rgb(0,0,0); /* Color de la caja trasera */
+    background-color: rgba(0,0,0,0.9); /* Negro con opacidad */
+}
+
+
+/* Contenido del modal (imagen) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* Botón para cerrar */
+.close {
+    text-align: right;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
